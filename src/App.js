@@ -1,26 +1,55 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
 import './App.css';
+import 'materialize-css/dist/css/materialize.min.css';
+import M from "materialize-css";
 
-function App() {
+import { Route, Switch } from "react-router-dom";
+
+import LogInOut from './components/LogInOut/LogInOut';
+import UserList from './components/UserList/UserList';
+import { loadUsers } from './store/store';
+import Navigation from './components/Navigation/Navigation';
+import InitialPage from './components/ItinialPage/ItinialPage';
+import FullUserItself from './components/FullUserItself/FullUserItself';
+
+const App = ({ logged, startLoad, pending }) => {
+
+  // start load user when we logged successfully
+  useEffect(() => {
+    if (logged) {
+      startLoad();
+    }
+  }, [logged]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Navigation />
+      <Switch>
+        <Route path="/" exact> <InitialPage /> </Route>
+        <Route path="/userList" exact>
+          {
+            logged ? <UserList /> : <p>This page not availeble</p>
+          }
+        </Route>
+        <Route path="/user:username" exact>
+          {
+            logged ? <FullUserItself/> : <p>This page not availeble</p>
+          }
+        </Route>
+      </Switch>
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = state => ({
+  logged: state.reducerUsers.logged,
+  pending: state.reducerUsers.pending,
+});
+
+const mapDispatchToProps = dispatch => ({
+  startLoad: () => dispatch(loadUsers())
+});
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

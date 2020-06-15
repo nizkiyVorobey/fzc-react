@@ -1,0 +1,18 @@
+.filtered-field-wrapper {
+    margin: auto;
+    max-width: 700px;
+    margin-top: 40px;
+}
+
+.log-in-out-user-list {
+    margin: auto;
+    max-width: max-content;
+}
+
+.sorted {
+    cursor: pointer;
+}
+
+.sorted:hover {
+    background-color: bisque;
+}

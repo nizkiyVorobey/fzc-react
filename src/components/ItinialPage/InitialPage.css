@@ -1,0 +1,15 @@
+.initial-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.log-in-out-initial-page {
+    margin: auto;
+    max-width: max-content;
+    margin-top: 40px;
+}
+
+.preloader-initial-page-wrapper {
+    margin-top: 30px;
+}
