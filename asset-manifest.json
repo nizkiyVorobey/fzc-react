@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/fzc-react/static/css/main.ac47c73e.chunk.css",
+    "main.js": "/fzc-react/static/js/main.02347aa2.chunk.js",
+    "main.js.map": "/fzc-react/static/js/main.02347aa2.chunk.js.map",
+    "runtime-main.js": "/fzc-react/static/js/runtime-main.6e52fdbc.js",
+    "runtime-main.js.map": "/fzc-react/static/js/runtime-main.6e52fdbc.js.map",
+    "static/css/2.5a510433.chunk.css": "/fzc-react/static/css/2.5a510433.chunk.css",
+    "static/js/2.7ff86f4b.chunk.js": "/fzc-react/static/js/2.7ff86f4b.chunk.js",
+    "static/js/2.7ff86f4b.chunk.js.map": "/fzc-react/static/js/2.7ff86f4b.chunk.js.map",
+    "index.html": "/fzc-react/index.html",
+    "precache-manifest.1ddb80ec87488b7f754e743e202e110b.js": "/fzc-react/precache-manifest.1ddb80ec87488b7f754e743e202e110b.js",
+    "service-worker.js": "/fzc-react/service-worker.js",
+    "static/css/2.5a510433.chunk.css.map": "/fzc-react/static/css/2.5a510433.chunk.css.map",
+    "static/css/main.ac47c73e.chunk.css.map": "/fzc-react/static/css/main.ac47c73e.chunk.css.map",
+    "static/js/2.7ff86f4b.chunk.js.LICENSE.txt": "/fzc-react/static/js/2.7ff86f4b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6e52fdbc.js",
+    "static/css/2.5a510433.chunk.css",
+    "static/js/2.7ff86f4b.chunk.js",
+    "static/css/main.ac47c73e.chunk.css",
+    "static/js/main.02347aa2.chunk.js"
+  ]
+}
