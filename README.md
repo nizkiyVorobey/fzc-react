@@ -1,2 +1,2 @@
-[View DEOM](http://nizkiyVorobey.github.io/fzc-react).
+[View DEMO](http://nizkiyVorobey.github.io/fzc-react).
 
